@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ブルタイマー プライバシーポリシー</title>
+  <meta name="description" content="ブルタイマーのプライバシーポリシー。取得する情報、端末内保存、通知、Live Activity、広告・トラッキングについて掲載しています。" />
+  <style>
+    :root {
+      --bg: #f7fbff;
+      --text: #1f2937;
+      --muted: #64748b;
+      --card: rgba(255, 255, 255, 0.80);
+      --blue: #1da9e8;
+      --cyan: #19d3d0;
+      --purple: #8b5cf6;
+      --line: rgba(148, 163, 184, 0.28);
+      --shadow: 0 18px 45px rgba(30, 64, 175, 0.10);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 8%, rgba(25, 211, 208, 0.22), transparent 26%),
+        radial-gradient(circle at 88% 12%, rgba(139, 92, 246, 0.20), transparent 28%),
+        linear-gradient(145deg, #f8fdff 0%, #eef8ff 46%, #f6f0ff 100%);
+      line-height: 1.85;
+      min-height: 100vh;
+    }
+
+    a { color: #0284c7; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 56px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      padding: 16px 0 28px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .app-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(25, 211, 208, 0.95), rgba(29, 169, 232, 0.95) 52%, rgba(139, 92, 246, 0.85));
+      box-shadow: 0 10px 24px rgba(2, 132, 199, 0.22);
+      color: #fff;
+    }
+
+    .app-icon svg { width: 27px; height: 27px; }
+
+    .nav a {
+      font-size: 14px;
+      color: #475569;
+      font-weight: 700;
+    }
+
+    .hero, .content {
+      border: 1px solid rgba(255, 255, 255, 0.74);
+      background: var(--card);
+      border-radius: 32px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+    }
+
+    .hero {
+      padding: clamp(30px, 6vw, 60px);
+      margin-bottom: 22px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      color: #0369a1;
+      font-weight: 800;
+      background: rgba(14, 165, 233, 0.10);
+      border: 1px solid rgba(14, 165, 233, 0.16);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 14px;
+    }
+
+    h1 {
+      margin: 18px 0 10px;
+      font-size: clamp(36px, 7vw, 58px);
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+      color: #0f4f86;
+    }
+
+    .lead {
+      max-width: 760px;
+      color: #475569;
+      margin: 0;
+      font-size: 17px;
+    }
+
+    .content {
+      padding: clamp(24px, 4vw, 42px);
+    }
+
+    section {
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section:last-child { border-bottom: none; }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: clamp(22px, 3vw, 30px);
+      letter-spacing: -0.03em;
+    }
+
+    p { margin: 0 0 12px; color: #475569; }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 1.3em;
+      color: #475569;
+    }
+
+    li { margin: 4px 0; }
+
+    .notice {
+      margin-top: 14px;
+      padding: 16px 18px;
+      border-left: 4px solid var(--blue);
+      background: rgba(14, 165, 233, 0.08);
+      border-radius: 18px;
+      color: #475569;
+    }
+
+    .footer {
+      margin-top: 26px;
+      text-align: center;
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    @media (max-width: 720px) {
+      .nav { flex-direction: column; align-items: flex-start; }
+      .hero, .content { border-radius: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav" aria-label="ページナビゲーション">
+      <div class="brand">
+        <span class="app-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M7 3 4.8 5.2M17 3l2.2 2.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="12" cy="13" r="7" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 8v5l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span>ブルタイマー</span>
+      </div>
+      <a href="index.html">サポートページへ戻る</a>
+    </nav>
+
+    <header class="hero">
+      <span class="eyebrow">Privacy Policy</span>
+      <h1>プライバシーポリシー</h1>
+      <p class="lead">ブルタイマーにおける利用者情報の取り扱いについて記載しています。</p>
+    </header>
+
+    <article class="content">
+      <section>
+        <p><strong>制定日：2026年5月31日</strong></p>
+        <p>ブルタイマー（以下「本アプリ」）は、音を鳴らさずにバイブレーションとローカル通知で時間を知らせるためのiOSアプリです。本プライバシーポリシーは、本アプリにおける利用者情報の取り扱いについて定めるものです。</p>
+      </section>
+
+      <section>
+        <h2>1. 取得する情報</h2>
+        <p>本アプリは、会員登録機能、ログイン機能、サーバー送信機能を持ちません。</p>
+        <p>本アプリは、利用者の氏名、住所、電話番号、メールアドレス、位置情報、連絡先、写真、音声、端末内ファイルなどの個人情報を取得しません。</p>
+      </section>
+
+      <section>
+        <h2>2. アプリ内で保存される情報</h2>
+        <p>本アプリでは、以下の情報を利用者の端末内に保存する場合があります。</p>
+        <ul>
+          <li>タイマー、定期アラート、時刻アラートの設定内容</li>
+          <li>アラートのラベル</li>
+          <li>通知予定時刻</li>
+          <li>通知のON/OFF状態</li>
+          <li>バイブレーションや通知に関する設定</li>
+          <li>Live Activityに関する設定</li>
+        </ul>
+        <p>これらの情報は、アプリの機能提供のために端末内で利用されます。</p>
+      </section>
+
+      <section>
+        <h2>3. 外部送信について</h2>
+        <p>本アプリは、タイマーやアラートの設定内容を外部サーバーへ送信しません。</p>
+        <p>本アプリは、利用者を識別するための情報を外部に送信しません。</p>
+      </section>
+
+      <section>
+        <h2>4. 通知機能について</h2>
+        <p>本アプリは、時間を知らせるためにiOSのローカル通知機能を利用します。</p>
+        <p>通知やバイブレーションの動作は、iOSの通知設定、集中モード、サイレントモード、端末のバイブレーション設定に従います。</p>
+        <p>通知許可の状態や通知の表示は、iOSの管理下で処理されます。</p>
+      </section>
+
+      <section>
+        <h2>5. Live Activity / Dynamic Islandについて</h2>
+        <p>本アプリは、対応端末においてLive ActivityおよびDynamic Islandを利用する場合があります。</p>
+        <p>Live ActivityおよびDynamic Islandには、次に近い通知、残り時間、アラート種別など、本アプリの機能に必要な情報が表示される場合があります。</p>
+        <p>表示内容や表示可否は、iOSの仕様および端末設定に従います。</p>
+      </section>
+
+      <section>
+        <h2>6. 広告・トラッキングについて</h2>
+        <p>本アプリは、広告配信を目的としたトラッキングを行いません。</p>
+        <p>本アプリは、第三者広告ネットワーク、アクセス解析SDK、行動分析SDKを利用しません。</p>
+      </section>
+
+      <section>
+        <h2>7. 第三者提供について</h2>
+        <p>本アプリは、利用者の個人情報を第三者へ提供しません。</p>
+      </section>
+
+      <section>
+        <h2>8. お問い合わせ</h2>
+        <p>本プライバシーポリシーに関するお問い合わせは、以下の窓口までご連絡ください。</p>
+        <p><a href="mailto:miwa.official@gmail.com?subject=%E3%83%96%E3%83%AB%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC%20%E3%83%97%E3%83%A9%E3%82%A4%E3%83%90%E3%82%B7%E3%83%BC%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC">miwa.official@gmail.com</a></p>
+      </section>
+
+      <section>
+        <h2>9. 改定について</h2>
+        <p>本プライバシーポリシーは、必要に応じて改定される場合があります。</p>
+        <p>改定後の内容は、本ページに掲載された時点で有効となります。</p>
+      </section>
+
+      <p class="notice">本ページは、ブルタイマーのプライバシーポリシーを利用者に分かりやすく示すためのページです。</p>
+    </article>
+
+    <footer class="footer">
+      <strong>ブルタイマー</strong><br />
+      <small>&copy; 2026 BuruTimer. All rights reserved.</small>
+    </footer>
+  </main>
+</body>
+</html>
